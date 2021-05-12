@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
-#include <vector>
-using std::cout; using std::string; using std::vector; using std::to_string;
+using std::cout; using std::string; using std::to_string;
 // answer is 906609
 int main()
 {
