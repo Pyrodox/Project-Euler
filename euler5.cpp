@@ -17,7 +17,6 @@ int main()
                     if (count == 20) {
                         break;
                     }
-                    // cout << count;
                 }
                 else {
                     count = 0;
