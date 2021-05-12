@@ -1,6 +1,6 @@
 #include <iostream>
 using std::cout; using std::endl;
-
+// answer is 233168
 int main()
 {
     int total = 0;
