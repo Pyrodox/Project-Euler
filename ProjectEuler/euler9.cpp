@@ -1,7 +1,7 @@
 #include <iostream>
 #include <math.h>
 using std::cout; using std::sqrt; using std::floor;
-// answer is 3.1875e+007 or 31875000
+//answer is 3.1875e+007 or 31875000
 int main()
 {
     int nums;
@@ -17,6 +17,5 @@ int main()
             break;
         }
     }
-
     return 0;
 }

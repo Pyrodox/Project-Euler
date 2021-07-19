@@ -1,6 +1,6 @@
 #include <iostream>
-using std::cout; using std::endl;
-// answer is 4613732
+using std::cout;
+//answer is 4613732
 int main()
 {
     int total = 2, first = 1, second = 2;
@@ -11,6 +11,6 @@ int main()
         first = second;
         second = i;
     }
-    cout << total << endl;
+    cout << total;
     return 0;
 }

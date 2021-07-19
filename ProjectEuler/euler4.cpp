@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using std::cout; using std::string; using std::to_string;
-// answer is 906609
+//answer is 906609
 int main()
 {
     string palindrome;

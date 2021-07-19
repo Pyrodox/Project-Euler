@@ -1,10 +1,9 @@
 #include <iostream>
 using std::cout;
-// answer is 232792560
+//answer is 232792560
 int main()
 {
-    int count = 0;
-    int a = 0;
+    int count = 0, a = 0;
     while (count != 20) {
         for (int t = 70; t < 999999999; ++t) {
             if (count == 20) {
@@ -29,6 +28,5 @@ int main()
         }
     }
     cout << a;
-
     return 0;
 }
