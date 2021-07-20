@@ -12,8 +12,5 @@ int main()
             total++;
         }
     }
-
     cout << total;
-
-    return 0;
 }
