@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 #define DEBUG false
 #define OJ_DEBUG
-//#define $(x) {if (DEBUG) {fout << __LINE__ << ": "; {x} fout << endl;}}
-//#define _(x) {fout << #x << " = " << x << " ";}
+#define $(x) {if (DEBUG) {fout << __LINE__ << ": "; {x} fout << endl;}}
+#define _(x) {fout << #x << " = " << x << " ";}
 const double E = 1e-8;
 const double PI = acos(-1);
 using namespace std;
@@ -26,7 +26,7 @@ int main() {
         total += v[i].size();
         pback = v[i];
         while (total < num) {
-            if (total + v[i + 1].size() <= num) {
+            if (i + 1 < v.size() && total + v[i + 1].size() <= num) {
                 pback += " " + v[i + 1];
                 total += v[i + 1].size();
                 ++i;

@@ -19,35 +19,29 @@ int main() {
     }
     for (int i = 0; i < 7; ++i) {
         if (minnum == 0) {
-            if (v[i] < maxnum) {
-                minnum = v[i];
-            }
+            minnum = min(v[i], maxnum);
         }
         else {
-            if (v[i] < minnum) {
-                minnum = v[i];
-            }
+            minnum = min(v[i], minnum);
         }
     }
     int diff = maxnum - minnum;
     v.erase(find(v.begin(), v.end(), maxnum));
     v.erase(find(v.begin(), v.end(), minnum));
-    int finalnum;
     if (find(v.begin(), v.end(), minnum) != v.end()) {
-        finalnum = maxnum - (2 * minnum);
-        cout << minnum << " " << minnum << " " << finalnum;
+        diff = maxnum - (2 * minnum);
+        cout << minnum << " " << minnum << " " << diff;
     }
     else {
-        int start = 1, ostart = 1; int end = maxnum - minnum - 1, oend = maxnum - minnum - 1;
-        for (int i = 0; i < (oend - ostart) / 2; ++i) {
-            if (find(v.begin(), v.end(), start) != v.end() && find(v.begin(), v.end(), end) != v.end()) {
-                if (find(v.begin(), v.end(), start + end) != v.end()) {
-                    cout << minnum << " " << start << " " << end;
-                    break;
-                }
+        int minnum2 = 0;
+        for (int i = 0; i < 5; ++i) {
+            if (minnum2 == 0) {
+                minnum2 = min(v[i], maxnum);
             }
-            ++start;
-            --end;
+            else {
+                minnum2 = min(v[i], minnum2);
+            }
         }
+        cout << minnum << " " << minnum2 << " " << maxnum - minnum - minnum2;
     }
 }
